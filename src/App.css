@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 50px 100px 0px 100px;
+  font-size: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: white;
+  text-decoration: none;
+}
+/* Nav Menu */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+.nav-menu a {
+  margin-left: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Nav Menu End */
+h1 {
+  font-size: 96px;
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.btn {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 15px 30px 15px 30px;
+  border: 1px solid white;
+  margin: 60px 15px 0px 15px;
+  font-family: "Poppins", sans-serif;
+}
+.btn.one {
+  background: white;
+  border: black;
+}
+
+.btn.two {
+  background: black;
   color: white;
+  border: white 1px solid;
 }
 
-.App-link {
-  color: #61dafb;
+/* Sample List */
+.sample {
+  margin: 0px 100px 0px 100px;
+}
+.sample-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.single-sample {
+  height: 320px;
+  width: 320px;
+  background-image: url("https://images.unsplash.com/photo-1628569044074-f221ebe28422?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80");
+  border: 1px solid red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* MUSIC SECTION */
+.music {
+  margin: 250px 100px 0 100px;
+  background-color: #009ed0;
 }
